@@ -15,5 +15,5 @@ module.exports = function transform(arr) {
             resultArray.push(arr[i]);
         }
     }
-    return resultArray;
+    return resultFArray;
 };
