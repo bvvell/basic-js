@@ -74,7 +74,7 @@ class VigenereCipheringMachine {
             console.log()
         }
 
-        return this.reverse === true ? result.split('').reverse().join('') : result;
+        return (this.reverse === false) ? result.split('').reverse().join('') : result;
     }
 
     decrypt(message, key) {
@@ -103,7 +103,8 @@ class VigenereCipheringMachine {
                 result += messageArray[a];
             }
         }
-        return this.reverse === true ? result.split('').reverse().join('') : result
+        // return this.reverse === true ? result.split('').reverse().join('') : result
+        return (this.reverse === false) ? result.split('').reverse().join('') : result;
     }
 
 }
